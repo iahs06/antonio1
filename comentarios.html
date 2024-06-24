@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="jugadores">Jugadores Legendarios</a></li>
+            <li><a href="torneos.html">Torneos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+           <li><a href="comentarios.html">Comentarios</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Comentarios</h1>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="comment">Comentario:</label><br>
+            <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        
+        <div class="donations">
+            <h2>Donaciones</h2>
+            <p>Si no tienes la posibilidad de adoptar algún perrito nos puedes ayudar con una donación ya sea de croquetas para perro, collares, juguetes para perros, shampoo para los perritos, entre otras cosas.
+            Si te es posible, nos ayudarías a compartir este blog para que estos perritos puedan conseguir un buen hogar.
+            </p>
+            <form action="https://tu-plataforma-de-donaciones.com" method="post">
+                <input type="number" id="amount" name="amount" placeholder="Cantidad a donar" required>
+                <input type="submit" value="Donar">
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <h2>Contacto</h2>
+            <p>Número de contacto: 123-456-7890</p>
+            <p>Correo electrónico: contacto@ejemplo.com</p>
+            <p>Visitas: <span id="visitas">0</span></p> 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
